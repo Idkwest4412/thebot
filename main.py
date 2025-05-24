@@ -1,4 +1,4 @@
-import discord #To install discord.py lib simply write "pip install discord.py" inside of your terminal
+import discord #To install discord.py lib simply enter "pip install discord.py" inside of your terminal
 from discord.ext import commands
 import os
 
@@ -19,7 +19,7 @@ async def ping(ctx):
 # Load cogs from the cogs/ folder if needed
 if __name__ == "__main__":
     for filename in os.listdir("./cogs"):
-        if filename.endswith(".py"):
+        if filename.endswith(".py"): #Will load in all the files that end with .py
             client.load_extension(f"cogs.{filename[:-3]}")
 
 # Replace 'YOUR_TOKEN_HERE' with your actual bot token
