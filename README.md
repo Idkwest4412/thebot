@@ -1,2 +1,2 @@
 # thebot
-idk west example bot code
+An example code for your discord.py bot
