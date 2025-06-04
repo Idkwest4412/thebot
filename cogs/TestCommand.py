@@ -5,7 +5,7 @@ class Test(commands.Cog):
     def __init__(self, client):
         self.client = client
 
-    @commands.command() #This is a testing command that will send "Test command works!" in the chat!
+    @commands.command() # This is a testing command that will send "Test command works!" in the chat!
     async def test(self, ctx):
         await ctx.send("Test command works!")
 
